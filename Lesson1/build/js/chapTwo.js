@@ -1,0 +1,10 @@
+"use strict";
+let isRightColor;
+let day;
+let acc;
+let stat;
+isRightColor = true;
+day = "Monday";
+acc = 0.5;
+stat = "hello";
+console.log(`${stat} ${day} ${acc} ${isRightColor} of everything.`);
