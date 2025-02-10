@@ -75,3 +75,14 @@ let another= (check: Account) => {
 }
 
 console.log(another(Evelin));
+
+// Enums 
+enum Grade {
+    F = 1,
+    D,
+    C,
+    B,
+    A
+}
+
+console.log(Grade.F);
