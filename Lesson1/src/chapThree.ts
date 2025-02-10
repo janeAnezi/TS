@@ -22,4 +22,33 @@ other = myTup;
 
 myTup[1] = 'glory';
 
+// Objects
+let myObj: object;
+myObj = [];
+console.log(typeof myObj);
 
+let samplObj = {
+    color: 'red',
+    isNew: false
+}
+
+//samplObj.color = 22
+samplObj.isNew = true;
+
+type Account = {
+    id: number,
+    name: string,
+    isVerified: boolean,
+    address: string | number,
+    favs: (string | number)[]
+}
+
+let joan: Account = {
+    id: 1,
+    name: 'Joan',
+    isVerified: false,
+    address: '7ezenwata',
+    favs: [1, 2, 3, 4, 5]
+}
+
+console.log(joan);

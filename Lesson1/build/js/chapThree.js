@@ -17,3 +17,21 @@ let other = [56, 'clarc', true];
 //myTup = other;  
 other = myTup;
 myTup[1] = 'glory';
+// Objects
+let myObj;
+myObj = [];
+console.log(typeof myObj);
+let samplObj = {
+    color: 'red',
+    isNew: false
+};
+//samplObj.color = 22
+samplObj.isNew = true;
+let joan = {
+    id: 1,
+    name: 'Joan',
+    isVerified: false,
+    address: '7ezenwata',
+    favs: [1, 2, 3, 4, 5]
+};
+console.log(joan);
