@@ -29,9 +29,26 @@ let samplObj = {
 samplObj.isNew = true;
 let joan = {
     id: 1,
-    name: 'Joan',
+    name: 'jessy',
     isVerified: false,
     address: '7ezenwata',
-    favs: [1, 2, 3, 4, 5]
+    // favs: [1, 2, 3, 4, 5]
+};
+let Evelin = {
+    id: 2,
+    name: 'Eve',
+    isVerified: false,
+    address: 'chukwuogor'
 };
 console.log(joan);
+let salut = (greet) => {
+    return `Hello ${greet.name}`;
+};
+console.log(salut(joan));
+let another = (check) => {
+    if (check.address) {
+        return `Your address is ${check.address.toUpperCase()}`;
+    }
+    return `Hello`;
+};
+console.log(another(Evelin));

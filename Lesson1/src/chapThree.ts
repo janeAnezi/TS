@@ -39,16 +39,39 @@ type Account = {
     id: number,
     name: string,
     isVerified: boolean,
-    address: string | number,
-    favs: (string | number)[]
+    address: string,
+    favs?: (string | number)[]
 }
 
 let joan: Account = {
     id: 1,
-    name: 'Joan',
+    name: 'jessy',
     isVerified: false,
-    address: '7ezenwata',
-    favs: [1, 2, 3, 4, 5]
+    address: '7ezenwata', 
+    // favs: [1, 2, 3, 4, 5]
 }
 
+let Evelin: Account = {
+    id: 2,
+    name: 'Eve',
+    isVerified: false,
+    address: 'chukwuogor'
+}
+
+
 console.log(joan);
+
+let salut = (greet: Account) => {
+    return `Hello ${greet.name}`
+}
+
+console.log(salut(joan));
+
+let another= (check: Account) => {
+    if(check.address) {
+        return `Your address is ${check.address.toUpperCase()}`;
+    }
+    return `Hello`;
+}
+
+console.log(another(Evelin));
