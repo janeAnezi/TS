@@ -7,3 +7,7 @@ type newObj = {
     age: number,
     character:strOrNum
 }
+
+type users = strOrNum;
+
+// literal types
