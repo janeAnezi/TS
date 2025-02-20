@@ -11,3 +11,7 @@ type newObj = {
 type users = strOrNum;
 
 // literal types
+let myName: 'Dave';
+let userName: 'Dave' | 'Frank' | 'John';
+userName = 'Frank';
+
